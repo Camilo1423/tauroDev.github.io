@@ -5,19 +5,14 @@ let appSpa = document.querySelector('#App')
 const router = (route) => {
     appSpa.innerHTML = '';
     switch(route) {
-        case '#/': {
+        case '#/': 
             return appSpa.appendChild(pages.home())
-        }
         case '#/aboutUs':
             return appSpa.appendChild(pages.about())
-        case '#/services':{
-            return console.log('About');
-        }
+        case '#/projects':
+            return appSpa.appendChild(pages.projects())
         case '#/contactUs':
             return console.log('ContactUs');
-        case '#/services/productOne': {
-            return console.log('About');
-        }
         default:
             return console.log('Not found');
     }
